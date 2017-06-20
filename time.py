@@ -42,4 +42,22 @@ def epoch():
     print("Number of ticks since 12:00am, January 1, 1970:", ticks)
 
 
-temps()
+if __name__ == "__main__":
+    print("1. Time")
+    print("2. Calendar of the month")
+    print("3. Calendar of the year")
+    print("4. Epoch \n")
+
+    choice = input("Choice : ")
+    print("")
+
+    if choice == "1":
+        temps()
+    elif choice == "2":
+        calendarOfTheMonth()
+    elif choice == "3":
+        calendarOfTheYear()
+    elif choice == "4":
+        epoch()
+    else:
+        print("Error !")
